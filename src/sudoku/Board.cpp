@@ -24,7 +24,7 @@ const Board& Board::operator = (const Board& other) {
 }
 bool Board::canSet(int x, int y, int val) const {
   if (!validCoord(x, y)) {
-    std::cerr << "("<<x<<","<<y<<") is invalid!" << std::endl;
+    return false;
   }
   int idx = xy2Index(x, y);
   int block = xy2BlockIndex(x, y);
@@ -67,7 +67,7 @@ bool Board::unset(int x, int y) {
 
 int Board::get(int x, int y) const {
   if (!validCoord(x, y)) {
-    std::cerr << "("<<x<<","<<y<<") is invalid!" << std::endl;
+    throw std::invalid_argument("bad index for get");
   }
   return numbers_[xy2Index(x, y)];
 }
