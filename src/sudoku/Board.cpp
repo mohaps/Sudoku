@@ -51,6 +51,7 @@ bool Board::set(int x, int y, int val) {
 bool Board::unset(int x, int y) {
   if (!validCoord(x, y)) {
     std::cerr << "("<<x<<","<<y<<") is invalid!" << std::endl;
+    return false;
   }
   int idx = xy2Index(x, y);
   int val = numbers_[idx];
