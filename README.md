@@ -31,6 +31,11 @@ to compile and run:
 make run BOARD_FILE=<board-file-name>
 ```
 
+e.g
+```
+make run BOARD_FILE=data/expert2.sudoku
+```
+
 ## Usage
 general usage:
 ```
