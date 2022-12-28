@@ -7,9 +7,9 @@ Solves the sudoku puzzle via Depth First Search / Backtracking.
 * create a queue of all empty cells in the board as candidates
 * initiate offset into the candidates list as 0
 * for each permissible value that can be set in the first candidate
-   ** offset is incremented by 1
-   ** try each permissible value in next candidate
-   ** loop till out of candidates or puzzle solved
+   * offset is incremented by 1
+   * try each permissible value in next candidate
+   * loop till out of candidates or puzzle solved
 
 The implementation is in ```src/sudoku/Solver.cpp``` in the ```solveWithCandidates()``` method
 
