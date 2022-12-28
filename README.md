@@ -1,6 +1,7 @@
-# Sudoku
-A C++ Sudoku Solver with no dependencies. Implemented using C++20. 
-Weekend hack and programming practice. Solves the sudoku puzzle via Depth First Search / Backtracking.
+# Sudoku Solver (C++)
+A C++ Sudoku Solver with no dependencies.
+Weekend hack and programming practice. 
+Solves the sudoku puzzle via Depth First Search / Backtracking.
 
 ## Algorithm
 * create a queue of all empty cells in the board as candidates
@@ -58,3 +59,7 @@ begins with magic header ```#$$sudoku-file$$#``` as the first line and then 9 li
 ...419..5
 ....8..79
 ```
+
+# Credits
+Saurav Mohapatra (mohaps@gmail.com)
+License: Apache 2.0
