@@ -11,6 +11,8 @@ Solves the sudoku puzzle via Depth First Search / Backtracking.
    * try each permissible value in next candidate
    * loop till out of candidates or puzzle solved
 
+Worst Case Runtime Complexity: ```O(9^k)```, where ```k``` is the number of empty cells left to solve
+
 The implementation is in ```src/sudoku/Solver.cpp``` in the ```solveWithCandidates()``` method
 
 Implemented a ```Check9``` class to check if 1-9 is set in row/column or 3x3 grid
